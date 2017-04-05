@@ -1,0 +1,193 @@
+@media only screen and (max-width: 1440px) {
+  .responsive-nav 
+    {
+    display: block;
+  }
+}
+
+
+@media (min-width: 540px) and (max-width: 800px){
+    .row-1
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .side-1 img
+    {
+        max-width: 90%;
+        margin: 35px;
+        height: 300px;
+    }
+    .side-2 .text-1
+    {
+        max-width: 90%;
+        margin: 30px;   
+    }
+    .title
+    {
+    margin: 40px auto;
+    }
+    .page h1
+    {
+        padding: 30px;
+    }
+    .page
+    {
+        margin-top: 70px;
+    }
+    .row-3
+    {
+        display: flex;
+        flex-direction: column;.
+    }
+    .row-4
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .row-4 .con-1, .row-4 .con-3
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .row p
+    {
+        font-size: 20px;
+    }
+    .git
+    {
+        margin: 30px auto;
+    }
+    .git-1, .git-2
+    {
+        display: block;
+    }
+    #ft p
+    {
+        font-size: 14px;
+    }
+}
+
+
+
+@media (max-width: 540px){
+   .row-3
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .row-3 .port-1 img
+    {
+       width: 300px;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+    }
+    .row-3 .port-1 p
+    {
+        justify-content: center;
+        align-items: center;
+    }
+    .side-1, .side-2
+    {
+        justify-content: center;
+        align-items: center;
+    }
+    .row-1
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .side-1 img
+    {
+        max-width: 80%;
+        margin: 20px;
+        height: 200px;
+    }
+    .side-2 .text-1
+    {
+        max-width: 100%;
+        margin: 30px;
+        
+    }
+    .row-2 .tech-1 ul
+    {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    }
+    .row-2 .tech-2 ul
+    {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    }
+    .con-2
+    {
+    margin: 10px auto 20px;
+    }
+    .row-3 .port-1 p
+    {
+    
+    margin-top: 20px;
+    margin-bottom: 40px;
+    }
+    .row-4
+    {
+        display: flex;
+        flex-direction: column;.
+    }
+    .row-4 .con-2, row-4 .con-3
+    {
+        margin: 80px 40px;
+    }
+    .row-4 .con-1
+    {
+        margin: 60px auto;
+    }
+    #ft p
+    {
+        font-size: 14px;
+    }
+    #contact-area
+    {
+        padding: 1px;
+        margin-left: 5px;
+        display: none;
+    }
+    #contact-area input
+    {
+        max-width: 80%;
+    }
+    #contact-area textarea
+    {
+        max-width: 80%;
+    }
+    .row-3 .port-2 .port-text-2 p
+    {
+        font-size: 22px;
+    }
+    .page h1
+    {
+        font-size: 50px;
+        padding: 40px 5px;
+    }
+    .page h4
+    {
+        font-size: 20px;
+    }
+    .con-4
+    {
+        min-height: 500px;
+    }
+    .con-1
+    {
+        margin-top: 30px;
+    }
+    .git
+    {
+    margin-left: 20px;
+    }
+    
+}
