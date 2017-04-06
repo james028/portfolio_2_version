@@ -18,11 +18,176 @@ body
 
 /* Responsywne menu*/
 
+.nav-bar {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  margin: 24px 0 0;
+  line-height: 48px;
+    font-family: 'Montserrat', sans-serif;
+}
+@media only screen and (min-width: 768px) {
+  .nav-bar {
+    margin: 4em 0 0;
+  }
+}
+
+.nav-bar_open nav {
+  display: inline-block;
+}
+.nav-bar_open .nav-bar__menu-btn {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.nav-bar_open .nav-bar__menu-btn span {
+  opacity: 0;
+}
+.nav-bar_open .nav-bar__menu-btn:before {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  width: 24px;
+  margin: 0;
+}
+.nav-bar_open .nav-bar__menu-btn:after {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  width: 24px;
+  margin: 0;
+}
+
+.nav-bar__nav {
+  position: absolute;
+  z-index: 2;
+  right: 24px;
+  display: none;
+  background-color: rgba(21, 143, 118, 0.9);
+}
+.nav-bar__nav:before {
+  position: absolute;
+  left: 12px;
+  color: #1bbc9b;
+  font-size: .9em;
+  content: 'Przejdź do:';
+}
+@media only screen and (min-width: 1024px) {
+  .nav-bar__nav:before {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .nav-bar__nav {
+    right: 72px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .nav-bar__nav {
+    display: inline-block;
+    background: none;
+    position: static;
+  }
+}
+.nav-bar__nav ul {
+  width: 200px;
+  padding: 48px 0 0;
+  margin: 0;
+  list-style: none;
+}
+@media only screen and (min-width: 1024px) {
+  .nav-bar__nav ul {
+    display: inline-block;
+    width: auto;
+    padding: 0;
+  }
+}
+.nav-bar__nav ul li {
+  display: block;
+}
+@media only screen and (min-width: 1024px) {
+  .nav-bar__nav ul li {
+    display: inline-block;
+  }
+}
+.nav-bar__nav ul a {
+  display: block;
+  -webkit-transition: opacity .1s linear;
+  transition: opacity .1s linear;
+}
+.nav-bar__nav ul a:hover {
+  opacity: .75;
+}
+
+.nav-bar__menu-btn {
+  position: absolute;
+  z-index: 3;
+  display: inline-block;
+  right: 24px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform 0.2s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.2s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.2s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.2s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+@media only screen and (min-width: 768px) {
+  .nav-bar__menu-btn {
+    right: 72px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .nav-bar__menu-btn {
+    display: none;
+  }
+}
+.nav-bar__menu-btn:before, .nav-bar__menu-btn:after,
+.nav-bar__menu-btn span {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 50%;
+  background-color: #000;
+  height: 3px;
+  width: 30px;
+  -webkit-transform: translate(-50%, -50%) translateZ(0);
+          transform: translate(-50%, -50%) translateZ(0);
+  content: '';
+}
+.nav-bar__menu-btn:before {
+  margin-top: -7px;
+}
+.nav-bar__menu-btn:after {
+  margin-top: 7px;
+}
+
+nav {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0 1.25em;
+  text-decoration: none;
+  color: #000000;
+}
+
+button {
+  display: inline-block;
+  vertical-align: center;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: none;
+}
+
+
+
+
 
 /* Page */
 .con-4
 {
-    background-image: url('../img/back.jpg');
+    background-image: url('../img/home-comp.jpg');
     background-size: cover;
     overflow: auto;
     background-repeat: no-repeat;
@@ -33,19 +198,52 @@ body
     max-height:100%;
     margin: 0 auto;
     display: block;
+    background-attachment: fixed;
+}
+.row-0
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 .row
 {
     display: flex;
-     justify-content: center;
+    justify-content: center;
     text-align: center;
 }
+.home-title p
+{
+    font-size: 4.2rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    letter-spacing: -.1rem;
+    color: #000;
+    margin: 170px auto 60px;
+    text-transform: uppercase;
+}
+.home-btn .home-btn-1
+{
+    width: 280px;
+    height: 50px;
+    border: 2px solid #FDCD3B;
+    box-shadow: none;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s transform linear;
+}
+.home-btn .home-btn-1:hover
+{
+    background-color: #FDCD3B;
+    transform: scale(1.2);
+    transition: 0.3s transform linear;
+}
 
-
-
-
-
-
+/* Arrow down */
 
 
 
