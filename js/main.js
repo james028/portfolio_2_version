@@ -13,7 +13,6 @@ nav2.addEventListener('click', function(e){
   e.stopPropagation();
 }, false);
 
-//close menu if is's not focused
 document.addEventListener("click", function (){
  nav3.classList.remove('nav-bar_open');
 }, false);
@@ -23,24 +22,23 @@ document.addEventListener("click", function (){
 //scroll down jquery
 
 $(document).ready(function() {
-    
+
     $(".scroll-section").click(function(e) {
-        
+
         var linkhref = $(this).attr("href");
-        
+
         $("html, body").animate({
-            scrollTop: $(linkhref).offset().top 
+            scrollTop: $(linkhref).offset().top
         }, 1500);
-        
-        
+
         e.preventDefault();
     });
-    
+
     $("#btn-1").click(function() {
         $("html, body").animate({
             scrollTop: $("#aboutme").offset().top
-        }, 2000);
-        
+        }, 1000);
+
     });
-    
+
 });
