@@ -36,9 +36,34 @@ $(document).ready(function() {
 
     $("#btn-1").click(function() {
         $("html, body").animate({
-            scrollTop: $("#aboutme").offset().top
+            scrollTop: $("#about").offset().top
         }, 1000);
 
     });
+
+});
+
+
+
+//button scroll up jquery
+$(document).ready(function(){
+	// hide #back-top first
+	$("#scroll-top").hide();
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#scroll-top').fadeIn();
+			} else {
+				$('#scroll-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#scroll-top button').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+		});
+	});
 
 });

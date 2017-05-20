@@ -1,240 +1,130 @@
-@media only screen and (max-width: 1440px) {
-  .responsive-nav 
+@media (min-width: 541px) and (max-width: 960px) {
+    .home-title .home-title-1, .home-title .home-title-2
     {
-    display: block;
-  }
+        font-size: 46px;
+    }
+    .row-contact
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-left, .contact-right
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .left-info
+    {
+        margin: 70px 40px 40px;
+    }
+    .left-info .info-1
+    {
+        text-align: center;
+        font-size: 14px;
+    }
+    .right-info
+    {
+        margin: 100px 1px 40px;
+    }
+    .right-info .right-inputs input
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .right-info .right-textarea textarea
+    {
+        height: 200px;
+        width: 100%;
+    }
+    .contact-btn
+    {
+        margin-bottom: 70px;
+    }
+    footer p
+    {
+        font-size: 20px;
+    }
 }
 
-@media (min-width: 801px) and (max-width: 1100px) {
-    .row-1
+
+@media (max-width: 540px) {
+    .home-title .home-title-1, .home-title .home-title-2
+    {
+        font-size: 30px;
+    }
+    .about-page-1 p
+    {
+        font-size: 22px;
+        margin: 70px auto 25px;
+    }
+    .about-page-2 p
+    {
+        font-size: 15px;
+        margin: 10px auto 50px;
+    }
+    .about-col-1
     {
         display: flex;
         flex-direction: column;
     }
-}
-@media (min-width: 541px) and (max-width: 800px){
-    .row-1
+    .col-1
     {
-        display: flex;
-        flex-direction: column;
+        margin: 1px auto 40px;
     }
-    .side-1 img
+    .col-img
     {
-        max-width: 90%;
-        margin: 35px;
-        height: 300px;
-    }
-    .side-2 .text-1
-    {
-        max-width: 90%;
-        margin: 30px;   
+        order: 3;
+        margin-bottom: 50px;
     }
     .title
     {
-    margin: 40px auto;
+        font-size: 40px;
     }
-    .page h1
+    .title::after
     {
-        padding: 30px;
+        font-size: 30px;
     }
-    .page
-    {
-        margin-top: 70px;
-    }
-    .row-3
-    {
-        display: flex;
-        flex-direction: column;.
-    }
-    .row-4
+    .row-contact
     {
         display: flex;
         flex-direction: column;
-        justify-content: center;
     }
-    .row-4 .con-1, .row-4 .con-3
+    .contact-left, .contact-right
     {
+        width: 100%;
         display: flex;
         justify-content: center;
     }
-    .row p
+    .left-info
     {
-        font-size: 20px;
+        margin: 70px 40px 40px;
     }
-    .git
+    .left-info .info-1
     {
-        margin: 30px auto;
-    }
-    .git-1, .git-2
-    {
-        display: block;
-    }
-    #ft p
-    {
+        text-align: center;
         font-size: 14px;
     }
-    .home-title p
+    .right-info
     {
-    font-size: 3.1rem;
-    margin: 140px auto 50px;
+        margin: 100px 1px 40px;
     }
-    .row-3 .port-1
+    .right-info .right-inputs input
     {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
     }
-    .row-3 .port-2
+    .right-info .right-textarea textarea
     {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-    }
-}
-
-
-
-@media (max-width: 540px){
-   .row-3
-    {
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .row-3 .port-1
-    {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        align-items: center;
-    }
-    .row-3 .port-2
-    {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-    }
-    .row-3 .port-1 img
-    {
-       width: 300px;
         height: 200px;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
     }
-    .row-3 .port-1 p
+    .contact-btn
     {
-        justify-content: center;
-        align-items: center;
+        margin-bottom: 70px;
     }
-    .side-1, .side-2
+    footer p
     {
-        justify-content: center;
-        align-items: center;
-    }
-    .row-1
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .side-1 img
-    {
-        max-width: 80%;
-        margin: 20px;
-        height: 200px;
-    }
-    .side-2 .text-1
-    {
-        max-width: 100%;
-        margin: 30px;
-        
-    }
-    .row-2 .tech-1 ul
-    {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    }
-    .row-2 .tech-2 ul
-    {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    }
-    .con-2
-    {
-    margin: 10px auto 20px;
-    }
-    .row-3 .port-1 p
-    {
-    
-    margin-top: 20px;
-    margin-bottom: 40px;
-    }
-    .row-4
-    {
-        display: flex;
-        flex-direction: column;.
-    }
-    .row-4 .con-2, row-4 .con-3
-    {
-        margin: 80px 40px;
-    }
-    .row-4 .con-1
-    {
-        margin: 60px auto;
-    }
-    #ft p
-    {
-        font-size: 14px;
-    }
-    #contact-area
-    {
-        padding: 1px;
-        margin-left: 5px;
-        display: none;
-    }
-    #contact-area input
-    {
-        max-width: 80%;
-    }
-    #contact-area textarea
-    {
-        max-width: 80%;
-    }
-    .row-3 .port-2 .port-text-2 p
-    {
-        font-size: 22px;
-    }
-    .page h1
-    {
-        font-size: 50px;
-        padding: 40px 5px;
-    }
-    .page h4
-    {
-        font-size: 20px;
-    }
-    .con-4
-    {
-        min-height: 590px;
-    }
-    .con-1
-    {
-        margin-top: 30px;
-    }
-    .git
-    {
-    margin-left: 20px;
-    }
-    .home-title p
-    {
-    font-size: 2.7rem;
-    margin: 100px auto 50px;
-    }
-    .home-btn .home-btn-1
-    {
-        width: 250px;
-        height: 40px;
+        font-size: 18px;
     }
 }
