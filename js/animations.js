@@ -1,5 +1,5 @@
 window.sr = ScrollReveal();
-        sr.reveal('.right-info, .left-info, .portfolio-one', {
+        sr.reveal('.right-info, .left-info', {
             reset: true,
             delay: 300,
             distance: 0,
