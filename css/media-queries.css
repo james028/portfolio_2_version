@@ -45,6 +45,13 @@
     {
         font-size: 20px;
     }
+      .top
+    {
+        bottom: 20px;
+        right: 20px;
+        height: 50px;
+        width: 50px;
+    }
 }
 
 
@@ -107,7 +114,7 @@
     }
     .right-info
     {
-        margin: 100px 1px 40px;
+        margin: 100px 15px 40px;
     }
     .right-info .right-inputs input
     {
@@ -126,5 +133,16 @@
     footer p
     {
         font-size: 18px;
+    }
+    .title::after
+    {
+        font-size: 24px;
+    }
+    .top
+    {
+        bottom: 15px;
+        right: 15px;
+        height: 40px;
+        width: 40px;
     }
 }

@@ -45,25 +45,18 @@ $(document).ready(function() {
 
 
 
-//button scroll up jquery
+//scroll top
 $(document).ready(function(){
-	// hide #back-top first
-	$("#scroll-top").hide();
-	// fade in #back-top
-	$(function () {
-		$(window).scroll(function () {
-			if ($(this).scrollTop() > 100) {
-				$('#scroll-top').fadeIn();
-			} else {
-				$('#scroll-top').fadeOut();
-			}
-		});
-		// scroll body to 0px on click
-		$('#scroll-top button').click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			}, 800);
-		});
-	});
+  $(window).scroll(function(){
+  if ( $(this).scrollTop() >= 500 ) {
+      $(".top").fadeIn();
+  }
+  else {
+    $(".top").fadeOut();
+  }
+  });
+  $(".top").click(function(){
+    $("html,body").stop().animate({scrollTop : 0});
+  });
 
 });
