@@ -438,6 +438,10 @@ button {
 	opacity: 1;
 	filter: alpha(opacity=100);
 }
+.hovereffect:hover .overlay .portfolio-text .portfolio-desc {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
 .hovereffect:hover a.info {
 	opacity: 1;
 	filter: alpha(opacity=100);
@@ -667,6 +671,7 @@ button {
     background : rgba(255,255,255,0.8);
     cursor : pointer;
     z-index: 999;
+    opacity: 0;
 }
 .top::after
 {
@@ -678,7 +683,10 @@ button {
     font-size: 26px;
     content: "\f077";
 }
-
+.top.show-icon{
+    opacity: 1;
+    transition: 1s all;
+}
 
 /* footer */
 footer

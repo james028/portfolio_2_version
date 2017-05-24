@@ -46,17 +46,35 @@ $(document).ready(function() {
 
 
 //scroll top
-$(document).ready(function(){
-  $(window).scroll(function(){
-  if ( $(this).scrollTop() >= 500 ) {
-      $(".top").fadeIn();
-  }
-  else {
-    $(".top").fadeOut();
-  }
-  });
-  $(".top").click(function(){
-    $("html,body").stop().animate({scrollTop : 0});
-  });
+document.addEventListener('DOMContentLoaded', function(){
+    var scroll = document.querySelector('.top');
+    var interval = null;
 
+    window.addEventListener('scroll', function(){
+        if (this.pageYOffset > 350) {
+            scroll.classList.add('show-icon');
+        }
+        else{
+            scroll.classList.remove('show-icon');
+        }
+    });
+
+    scroll.addEventListener('click', function(){
+        if(interval == null) {
+            interval = setInterval(function(){
+                scrollToTop(-1);
+            }, 10);
+        }
+    });
+
+    function scrollToTop(speed){
+        if (window.pageYOffset > 10) {
+            speed = 10*speed*(2-speed);
+            scrollBy(0,speed);
+        }
+        else{
+            clearInterval(interval);
+            interval = null;
+        }
+    }
 });
