@@ -303,7 +303,7 @@ button {
 .col-1
 {
     flex: 1;
-    margin: 1px auto 140px;
+    margin: 50px auto 140px;
     text-align: center;
 }
 .col-img 
@@ -326,7 +326,15 @@ button {
     font-size: 70px;
     margin-bottom: 15px;
 }
-
+.about-cv
+{
+    margin: 5px auto!important;
+}
+.about-cv-1
+{
+    color: snow;
+    font-size: 22px;
+}
 
 /* Sekcja skills */
 #skills
