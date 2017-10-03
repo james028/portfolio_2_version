@@ -370,7 +370,11 @@ button {
 #portfolio
 {
     font-family: 'Montserrat', sans-serif;
-    background: #D82C2E;
+    /*background: #D82C2E;*/
+    background: : #ffffff;
+}
+.title-proj {
+    color: #000000 !important;
 }
 .row-portfolio
 {
